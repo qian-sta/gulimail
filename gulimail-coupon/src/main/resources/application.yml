@@ -4,6 +4,12 @@ spring:
     password: root
     url: jdbc:mysql://192.168.1.111/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.5.0.51:8848
+  application:
+    name: gulimail-coupon
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:

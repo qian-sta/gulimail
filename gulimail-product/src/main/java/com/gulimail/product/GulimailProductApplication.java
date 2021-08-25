@@ -3,6 +3,7 @@ package com.gulimail.product;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 整合mybatis-plus
@@ -16,6 +17,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *          2）、配置映射文件的路径
  */
 @MapperScan("com.gulimail.product.dao")
+@EnableDiscoveryClient
 @SpringBootApplication
 public class GulimailProductApplication {
 
